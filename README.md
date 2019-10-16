@@ -35,7 +35,9 @@
 ##### /BOARDING {GET, POST, PUT, DELETE}
 - **GET**
 *URL : **/boarding*** 
+
 *Security : **KEY***
+
 *Description* : Get boarding list user
 
 **Parameter**
@@ -52,7 +54,9 @@
 
 - **POST**
 *URL : **/boarding*** 
+
 *Security : **KEY***
+
 *Description* :  POST new boarding
 
 **Parameter**
@@ -68,7 +72,9 @@
 ------------
 - **PUT**
 *URL : **/boarding*** 
+
 *Security : **KEY***
+
 *Description* : Edit boarding
 
 **Parameter**
@@ -83,7 +89,9 @@
 
 - **DELETE**
 *URL : **/boarding*** 
+
 *Security : **KEY***
+
 *Description* :  remove boarding 
 
 **Parameter**
@@ -97,9 +105,13 @@
 ------------
 
 ##### /tujuan
+
 *URL : **/authentication*** 
+
 *Method: **GET***
+
 *Security : **Basic***
+
 *Description* : GET API KEY Production, Api Key Development
 
 **Parameter**
