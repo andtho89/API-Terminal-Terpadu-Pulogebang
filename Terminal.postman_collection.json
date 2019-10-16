@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "f3d26e20-5936-e3a0-c0fe-51f9f2a16b53",
+		"name": "Terminal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://apps.transiro.co.id/api/vehicles/registerinout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-API-Authorization",
+						"value": "TeMyTAxl2Vir0Tb"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apps.transiro.co.id/api/vehicles/registerinout",
+					"protocol": "https",
+					"host": [
+						"apps",
+						"transiro",
+						"co",
+						"id"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						"registerinout"
+					]
+				},
+				"description": "{\r\n  \"CardId\": \"sample string 1\",\r\n  \"VehicleKey\": \"sample string 2\",\r\n  \"Status\": \"sample string 3\"\r\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/peron/api/tab-peron?noreg=08031800200001&namapo=SINAR&tujuan=Bandung&idperon=1&status=",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "TTPG-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "noreg",
+							"value": "0903180007",
+							"type": "text"
+						},
+						{
+							"key": "namapo",
+							"value": "Sinar",
+							"type": "text"
+						},
+						{
+							"key": "tujuan",
+							"value": "Bandung",
+							"type": "text"
+						},
+						{
+							"key": "idperon",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/peron/api/tab-peron",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"tab-peron"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/peron/api/login?username=ttpg&password=ttpg",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "TTPG-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"url": {
+					"raw": "localhost/peron/api/login?username=ttpg&password=ttpg",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "ttpg"
+						},
+						{
+							"key": "password",
+							"value": "ttpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/peron/api/ceknoreg?noreg=090318200540",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "TTPG-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"url": {
+					"raw": "localhost/peron/api/ceknoreg?noreg=090318200540",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"ceknoreg"
+					],
+					"query": [
+						{
+							"key": "noreg",
+							"value": "090318200540"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_peron",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "TTPG-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"url": {
+					"raw": "localhost/peron/api/peron?noreg=1089992",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"peron"
+					],
+					"query": [
+						{
+							"key": "noreg",
+							"value": "1089992"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/peron/api/peron?noreg=090318165444",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ttpg-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/peron/api/peron?noreg=090318165444",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"peron"
+					],
+					"query": [
+						{
+							"key": "noreg",
+							"value": "090318165444"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/tpg/api/peron",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "ttpg-API-KEY",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "waktu",
+							"value": "2018-02-23 01:00:00",
+							"type": "text"
+						},
+						{
+							"key": "nama_po",
+							"value": "Ganti2",
+							"type": "text"
+						},
+						{
+							"key": "noreg",
+							"value": "02031800200002",
+							"type": "text"
+						},
+						{
+							"key": "operator",
+							"value": "Ganti Test232",
+							"type": "text"
+						},
+						{
+							"key": "tujuan",
+							"value": "Telah Diganti23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/peron/api/peron/peron",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"peron",
+						"peron"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/peron/api/tab_peron",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ttpg-api-key",
+						"value": "e10adc3949ba59abbe56e057f20f883e"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "noreg",
+							"value": "090318165444",
+							"type": "text"
+						},
+						{
+							"key": "tgl_tab",
+							"value": "2018-02-23 01:00:00",
+							"type": "text"
+						},
+						{
+							"key": "namapo",
+							"value": "sinarmas",
+							"type": "text"
+						},
+						{
+							"key": "tujuan",
+							"value": "bandung",
+							"type": "text"
+						},
+						{
+							"key": "idperon",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "tab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/peron/api/tab_peron?",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"peron",
+						"api",
+						"tab_peron"
+					],
+					"query": [
+						{
+							"key": "noreg",
+							"value": "090318165444",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
