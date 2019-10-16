@@ -15,10 +15,16 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 |  /authentication |BASIC | :heavy_check_mark:  |:x:  |:x: |:x:   |:x: |
 |  /boarding |KEY | :heavy_check_mark:  |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:  |
 |  /tujuan |KEY | :heavy_check_mark:   |:x:  |:x:  |:x:   |:x: |
+|  /po |KEY | :heavy_check_mark:   |:x:  |:x:  |:x:   |:x: |
 |   |   |   |   |   | | ||
 
 ------------
 
+**api-key get from api /authentication with basic authentication**
+
+** to get a username and password please contact Terminal Terpadu Pulogebang**
+
+------------
 
 ##### /AUTHENTICATION
 *URL : **/authentication***
@@ -46,6 +52,7 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
 | boarding_id  | :x: | Get boarding by id boarding  |
+| po_id  |:x:   |  id PO get from **API /po**  |
 | ticket_id  | :x: | Get boarding by id ticket  |
 | date_of_departure  | :x: | Get boarding by date of departure  |
 |   |   |   | |
@@ -65,6 +72,7 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
 | ticket_id  |:heavy_check_mark:   |  id ticket  |
+| po_id  |:heavy_check_mark:  |  id PO get from **API /po**  |
 | destination_id  | :heavy_check_mark:   | destination id get from **api /tujuan** |
 | date_of_departure  | :heavy_check_mark:   |  date of departure  |
 | time_of_departure  | :heavy_check_mark:   | time of departure  |
@@ -83,12 +91,14 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
 | ticket_id  |:heavy_check_mark:   |  id ticket  |
+| po_id  |:x:   |  id PO get from **API /po**  |
 | destination_id  |  :x:  | destination id get from **api /tujuan** |
 | date_of_departure  |  :x:   |  date of departure  |
 | time_of_departure  | :x:  | time of departure  |
 |   |   |   | |
 
 - **DELETE**
+
 *URL : **/boarding*** 
 
 *Security : **KEY***
@@ -111,9 +121,9 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 
 *Method: **GET***
 
-*Security : **Basic***
+*Security : **KEY***
 
-*Description* : GET API KEY Production, Api Key Development
+*Description* : GET list tujuan
 
 **Parameter**
 
@@ -125,3 +135,24 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 | region  |:x: | get tujuan by region  |
 |   |   |   | |
 ------------
+
+##### /po
+
+*URL : **/po*** 
+
+*Method: **GET***
+
+*Security : **KEY***
+
+*Description* : Get list po
+
+
+**Parameter**
+
+| Parameter  | Required  |Notes   |
+| ------------ | ------------ | ------------ |
+| id  |:x: | get po by id  |
+| name  |:x: | get po by name  |
+|   |   |   | |
+------------
+
