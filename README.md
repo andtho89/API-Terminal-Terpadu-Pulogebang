@@ -12,9 +12,9 @@
 ##### API LIST
 |  API | URL  | SECURITY | GET | POST  | PUT   | DELETE |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |------------ |
-|  /authentication |BASIC | :heavy_check_mark:  |:fa-times:   |:fa-times:  |:fa-times:    |:fa-times:  |
+|  /authentication |BASIC | :heavy_check_mark:  |:x:  |:x: |:x:   |:x: |
 |  /boarding |KEY | :heavy_check_mark:  |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:  |
-|  /tujuan |KEY | :heavy_check_mark:   |:fa-times:   |:fa-times:   |:fa-times:    |:fa-times:  |
+|  /tujuan |KEY | :heavy_check_mark:   |:x:  |:x:  |:x:   |:x: |
 |   |   |   |   |   | | ||
 
 ------------
@@ -45,9 +45,9 @@
 
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
-| boarding_id  | :fa-times:  | Get boarding by id boarding  |
-| ticket_id  | :fa-times:  | Get boarding by id ticket  |
-| date_of_departure  | :fa-times:  | Get boarding by date of departure  |
+| boarding_id  | :x: | Get boarding by id boarding  |
+| ticket_id  | :x: | Get boarding by id ticket  |
+| date_of_departure  | :x: | Get boarding by date of departure  |
 |   |   |   | |
 
 ------------
@@ -83,9 +83,9 @@
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
 | ticket_id  |:heavy_check_mark:   |  id ticket  |
-| destination_id  |  :fa-times:   | destination id get from **api /tujuan** |
-| date_of_departure  |  :fa-times:    |  date of departure  |
-| time_of_departure  | :fa-times:   | time of departure  |
+| destination_id  |  :x:  | destination id get from **api /tujuan** |
+| date_of_departure  |  :x:   |  date of departure  |
+| time_of_departure  | :x:  | time of departure  |
 |   |   |   | |
 
 - **DELETE**
@@ -119,9 +119,9 @@
 
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
-| id  |:fa-times:  | get tujuan by id  |
-| province  |:fa-times:  | get tujuan by province  |
-| city  |:fa-times:  | get tujuan by city  |
-| region  |:fa-times:  | get tujuan by region  |
+| id  |:x: | get tujuan by id  |
+| province  |:x: | get tujuan by province  |
+| city  |:x: | get tujuan by city  |
+| region  |:x: | get tujuan by region  |
 |   |   |   | |
 ------------
