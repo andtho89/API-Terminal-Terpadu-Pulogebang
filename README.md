@@ -20,9 +20,12 @@
 
 
 ##### /AUTHENTICATION
-*URL : **/authentication*** 
+*URL : **/authentication***
+
 *Method: **GET***
+
 *Security : **Basic***
+
 *Description* : GET API KEY Production, Api Key Development
 
 ------------
