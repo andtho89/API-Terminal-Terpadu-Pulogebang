@@ -107,7 +107,7 @@ https://documenter.getpostman.com/view/3787169/SVtYT7Xv
 
 ##### /tujuan
 
-*URL : **/authentication*** 
+*URL : **/tujuan*** 
 
 *Method: **GET***
 
