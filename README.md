@@ -12,9 +12,9 @@
 ##### API LIST
 |  API | URL  | SECURITY | GET | POST  | PUT   | DELETE |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |------------ |
-|  /authentication |BASIC | :fa-check:   |:fa-times:   |:fa-times:  |:fa-times:    |:fa-times:  |
-|  /boarding |KEY | :fa-check:   |:fa-check:   |:fa-check:   |:fa-check:   |:fa-check:  |
-|  /tujuan |KEY | :fa-check:   |:fa-times:   |:fa-times:   |:fa-times:    |:fa-times:  |
+|  /authentication |BASIC | :heavy_check_mark:  |:fa-times:   |:fa-times:  |:fa-times:    |:fa-times:  |
+|  /boarding |KEY | :heavy_check_mark:  |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:   |:heavy_check_mark:  |
+|  /tujuan |KEY | :heavy_check_mark:   |:fa-times:   |:fa-times:   |:fa-times:    |:fa-times:  |
 |   |   |   |   |   | | ||
 
 ------------
@@ -64,10 +64,10 @@
 
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
-| ticket_id  |:fa-check:   |  id ticket  |
-| destination_id  | :fa-check:   | destination id get from **api /tujuan** |
-| date_of_departure  | :fa-check:   |  date of departure  |
-| time_of_departure  | :fa-check:   | time of departure  |
+| ticket_id  |:heavy_check_mark:   |  id ticket  |
+| destination_id  | :heavy_check_mark:   | destination id get from **api /tujuan** |
+| date_of_departure  | :heavy_check_mark:   |  date of departure  |
+| time_of_departure  | :heavy_check_mark:   | time of departure  |
 |   |   |   | |
 
 ------------
@@ -82,7 +82,7 @@
 
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
-| ticket_id  |:fa-check:   |  id ticket  |
+| ticket_id  |:heavy_check_mark:   |  id ticket  |
 | destination_id  |  :fa-times:   | destination id get from **api /tujuan** |
 | date_of_departure  |  :fa-times:    |  date of departure  |
 | time_of_departure  | :fa-times:   | time of departure  |
@@ -99,7 +99,7 @@
 
 | Parameter  | Required  |Notes   |
 | ------------ | ------------ | ------------ |
-| ticket_id  |:fa-check:   |  id ticket  |
+| ticket_id  |:heavy_check_mark:   |  id ticket  |
 |   |   |   | |
 
 
